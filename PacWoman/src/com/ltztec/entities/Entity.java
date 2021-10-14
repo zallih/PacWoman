@@ -16,6 +16,7 @@ import com.ltztec.world.World;
 
 public class Entity {
 	
+	public static BufferedImage CEREJA_SPRITE = Game.spritesheet.getSprite(0, 16, 16, 16);
 
 	protected double x;
 	protected double y;

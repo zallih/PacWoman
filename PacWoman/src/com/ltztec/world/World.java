@@ -6,6 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import com.ltztec.entities.Cherry;
+import com.ltztec.entities.Entity;
 import com.ltztec.main.Game;
 
 public class World {
@@ -39,6 +41,11 @@ public class World {
 						Game.player.setY(yy*16);
 					}else if(pixelAtual == 0xFFFF0000) {
 						//Instanciar inimigo e adicionar a lista das entities
+					}else if(pixelAtual == 0xFF983800) {
+						// Cherry
+						Cherry cherry = new Cherry(xx*16,yy*16, 16, 16, 0, Entity.CEREJA_SPRITE);
+						Game.entities.add(cherry);
+						Game.cherry_count++;
 					}
 				}
 			}
