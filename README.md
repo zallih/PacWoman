@@ -39,7 +39,10 @@ Dessa maneira, a Midway, dona dos direitos de Pac-Man nos EUA, acabou comprando 
   <h2>Sobre o jogo</h2>
   
   Criando PacWoman com minha própria engine!
-  
+   <br><br>
+  Para jogar baixe o aquivivo e execute - <a href="https://github.com/zallih/PacWoman/blob/main/PacWoman.jar?raw=true">Clique aqui </a>
+  <br>
+  OBS - Pode aparecer que irá danificar seu aprelho, porem é completamente seguro! Caso queira conferir o código fonte <a href="https://github.com/zallih/PacWoman/tree/main/PacWoman> Clique aqui </a>
   
   <h3>Controles:</h3>
   
