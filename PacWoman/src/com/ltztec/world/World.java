@@ -7,7 +7,9 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 import com.ltztec.entities.Cherry;
+import com.ltztec.entities.Enemy;
 import com.ltztec.entities.Entity;
+import com.ltztec.entities.Player;
 import com.ltztec.main.Game;
 
 public class World {
@@ -39,8 +41,14 @@ public class World {
 						//Player
 						Game.player.setX(xx*16);
 						Game.player.setY(yy*16);
-					}else if(pixelAtual == 0xFFFF0000) {
+					}else if(pixelAtual == 0xFFF8C8E0) {
 						//Instanciar inimigo e adicionar a lista das entities
+						Enemy enemy1 = new Enemy(xx*16,yy*16, 16, 16, 0, Entity.ENEMY1_SPRITE);
+						Game.entities.add(enemy1);
+					}else if(pixelAtual == 0xFF00F8F8) {
+						//Instanciar inimigo e adicionar a lista das entities
+						Enemy enemy2 = new Enemy(xx*16,yy*16, 16, 16, 0, Entity.ENEMY2_SPRITE);
+						Game.entities.add(enemy2);
 					}else if(pixelAtual == 0xFF983800) {
 						// Cherry
 						Cherry cherry = new Cherry(xx*16,yy*16, 16, 16, 0, Entity.CEREJA_SPRITE);
@@ -74,8 +82,13 @@ public class World {
 				(tiles[x4 + (y4*World.WIDTH)] instanceof WallTile));
 	}
 	
-	public static void restartGame(String level){
-		new Game();
+	public static void restartGame(){
+		Game.player = new Player(0,0,16,16,1,Game.spritesheet.getSprite(32, 0,16,16));
+		Game.entities.clear();
+		Game.entities.add(Game.player);
+		Game.cherry_count = 0;
+		Game.cherry_currently = 0;
+		Game.world = new World("/level1.png");
 		return;
 	}
 	
