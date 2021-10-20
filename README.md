@@ -28,7 +28,7 @@ Dessa maneira, a Midway, dona dos direitos de Pac-Man nos EUA, acabou comprando 
   
   
   
-  Veja mais em: <a href="https://segredosdomundo.r7.com/pac-man-historia/">Pac-Man – Origem, história e sucesso do fenômeno cultural</a>
+  Veja mais em: <a href="https://segredosdomundo.r7.com/pac-man-historia/">Pac-Man – Origem, história e sucesso do fenômeno cultural</a> ᶜʳᵉᵈᶦᵗᵒˢ
 </div>
 
   <p align="middle">
